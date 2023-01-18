@@ -26,7 +26,7 @@ public class ReactNativeBlobUtilUtils {
     public static X509TrustManager sharedTrustManager;
 
     public static String getMD5(String input) {
-        String result = null;
+        /* String result = null;
 
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
@@ -45,8 +45,8 @@ public class ReactNativeBlobUtilUtils {
         } finally {
             // TODO: Is discarding errors the intent? (https://www.owasp.org/index.php/Return_Inside_Finally_Block)
             return result;
-        }
-
+        } */
+        return null;
     }
 
     public static void emitWarningEvent(String data) {

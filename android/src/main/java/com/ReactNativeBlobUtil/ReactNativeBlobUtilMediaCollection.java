@@ -125,7 +125,7 @@ public class ReactNativeBlobUtilMediaCollection {
     }
 
     public static boolean writeToMediaFile(Uri fileUri, String data, boolean transformFile, Promise promise, ReactApplicationContext ctx) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+        /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             try {
                 Context appCtx = ctx.getApplicationContext();
                 ContentResolver resolver = appCtx.getContentResolver();
@@ -216,7 +216,9 @@ public class ReactNativeBlobUtilMediaCollection {
             return true;
         } else {
             return ReactNativeBlobUtilFS.writeFile(ReactNativeBlobUtilUtils.normalizePath(fileUri.toString()), ReactNativeBlobUtilConst.DATA_ENCODE_URI, data, false);
-        }
+        } */
+
+        return false;
     }
 
     public static void copyToInternal(Uri contenturi, String destpath, Promise promise) {
